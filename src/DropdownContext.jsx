@@ -11,6 +11,7 @@ export const DropdownProvider = ({ children }) => {
   const toggleDropdown = () => setIsOpen(!isOpen);
   const selectItem = (item) => {
     setSelectedItem(item);
+    setIsOpen(false)
   };
 
   return (
